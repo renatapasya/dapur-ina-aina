@@ -5,7 +5,12 @@ export async function getMenus() {
 
   const { data, error } = await supabase
     .from("menu")
-    .select("*");
+    .select(`
+      *,
+      kategori (
+        nama_kategori
+      )
+    `);
 
 
   if(error){
