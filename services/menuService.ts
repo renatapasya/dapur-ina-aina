@@ -13,12 +13,12 @@ export async function getMenus() {
     `);
 
 
+  console.log("MENU RESULT:", data);
+  console.log("MENU ERROR:", error);
+
+
   if(error){
-
-    console.log(error);
-
     return [];
-
   }
 
 
