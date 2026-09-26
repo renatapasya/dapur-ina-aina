@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #F7F2EA;
+  --foreground: #2C2118;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+
+  margin: 0;
+
+  background: var(--background);
+
+  color: var(--foreground);
+
+  font-family: var(--font-body), sans-serif;
+
+}
+
+
+
+
+
+/* Luxury Restaurant Typography */
+
+
+h1,
+h2,
+h3,
+h4 {
+
+  font-family: var(--font-brand), serif;
+
+  letter-spacing: 0.5px;
+
+}
+
+
+
+
+
+
+
+/* Chrome Autofill Fix */
+/* supaya input tidak berubah biru */
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+
+
+  -webkit-text-fill-color: #2C2118;
+
+
+  -webkit-box-shadow:
+  0 0 0px 1000px #FAF4EC inset;
+
+
+  transition:
+  background-color 5000s ease-in-out 0s;
+
+
+}
+
+
+
+
+
+
+
+
+/* Button smooth */
+
+
+button {
+
+  transition:
+  all 0.3s ease;
+
+}
+
+
+
+
+
+/* Scrollbar */
+
+
+::-webkit-scrollbar {
+
+  width: 8px;
+
+}
+
+
+::-webkit-scrollbar-track {
+
+  background:#F7F2EA;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+
+  background:#B87333;
+
+  border-radius:10px;
+
+}
+
+
+
+
+
+/* Selection */
+
+
+::selection {
+
+  background:#B87333;
+
+  color:white;
+
+}
